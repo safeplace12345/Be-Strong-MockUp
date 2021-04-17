@@ -8,32 +8,24 @@ body {
   margin: 0;
   padding: 0;
   max-width: 100vw;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  font-family: "Roboto Mono", monospace; }
   body p {
-    font: 20px family-open-sans; }
+    font: 20px; }
   body .header {
     height: 70vh;
     display: grid;
     grid-template-rows: 25% 85%; }
-    @media only screen and (min-width: 1300px) {
-      body .header {
-        grid-template-rows: 10% 90%; } }
     body .header .head {
       display: flex;
       flex-direction: column; }
-      @media only screen and (min-width: 1300px) {
-        body .header .head {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between; } }
-      body .header .head img {
+      body .header .head img.logo {
         top: 47px;
         left: 37px;
         width: 151px;
         height: 33px; }
       body .header .head ul {
         display: flex;
-        font: bold 18px/29px Roboto;
         letter-spacing: -0.09px;
         color: #000000;
         text-transform: capitalize;
@@ -43,20 +35,20 @@ body {
       margin: 0 auto;
       width: 100%;
       height: 100%; }
-      body .header .main_slider .carousel .carousel-inner, body .header .main_slider .carousel .carousel-item {
+      body .header .main_slider .carousel .carousel-inner,
+      body .header .main_slider .carousel .carousel-item {
         height: 100%; }
       body .header .main_slider .carousel .carousel-caption {
-        height: 40%;
+        height: 100%;
         top: 0;
         margin: auto auto; }
-        @media only screen and (min-width: 1300px) {
-          body .header .main_slider .carousel .carousel-caption h5,
-          body .header .main_slider .carousel .carousel-caption button {
-            font-size: 30px; }
-          body .header .main_slider .carousel .carousel-caption p {
-            font: 60px "Open Sans"; }
-          body .header .main_slider .carousel .carousel-caption button {
-            padding: 20px 40px; } }
+        body .header .main_slider .carousel .carousel-caption h5 {
+          opacity: 75%;
+          letter-spacing: 0.1em;
+          font-weight: lighter; }
+        body .header .main_slider .carousel .carousel-caption p {
+          letter-spacing: 0.08em;
+          font-weight: lighter; }
     body .header .main_slider img {
       width: 100%;
       height: 100%; }
@@ -65,19 +57,19 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center; }
+  body .subscriptions .classic {
+    background: url("../Assets/Assets Mobile/Group 156.png"); }
   body .subscriptions .standard {
-    background: inline("./Assets/Assets Mobile/Mask Group 13.png"); }
-  body .subscriptions .standard_btn {
-    background-color: #945b9f; }
+    background: url("../Assets/Assets Mobile/Group 155.png"); }
+    body .subscriptions .standard button {
+      background-color: #945b9f; }
+  body .subscriptions .premium {
+    background: url("../Assets/Assets Mobile/Group 154.png"); }
   body .about_us {
     flex-direction: column;
     align-items: center; }
     body .about_us p {
       font-size: 20px; }
-    @media only screen and (min-width: 1300px) {
-      body .about_us {
-        flex-direction: row;
-        flex-wrap: wrap; } }
     body .about_us .tile {
       height: 35vh; }
       body .about_us .tile img {
@@ -90,40 +82,77 @@ body {
         padding: 1em;
         background-color: #13191a;
         opacity: 0.68; }
-  @media only screen and (min-width: 1300px) {
-    body .our_classes .head {
-      font-size: 1.9rem; } }
-  @media only screen and (min-width: 1300px) {
-    body .our_classes .foot {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); } }
   body .meet_our_team h2 {
     font-size: 45px; }
-  @media only screen and (max-width: 390px) {
-    body .meet_our_team .team_carousel {
-      display: none; } }
-  body .meet_our_team .team_carousel .slick-slide {
-    margin: 10px; }
-  body .meet_our_team .team_carousel .slick-slide img {
-    width: 100%;
-    height: 80%; }
-  body .meet_our_team .team_carousel .slick-prev,
-  body .meet_our_team .team_carousel .slick-next {
-    bottom: -1%;
-    z-index: 10;
-    color: black; }
-  body .meet_our_team .team_carousel .slick-next {
-    right: 0; }
-  body .meet_our_team .team_carousel .slick-prev {
-    left: 0; }
-  body .meet_our_team .team_carousel .slick-prev:hover,
-  body .meet_our_team .team_carousel .slick-next:hover {
-    opacity: 0.5; }
-  body .meet_our_team .team_carousel .slick-prev:before,
-  body .meet_our_team .team_carousel .slick-next:before {
-    color: red; }
+  body .meet_our_team .team_carousel {
+    display: none; }
+    body .meet_our_team .team_carousel .controls {
+      position: relative;
+      bottom: -15em;
+      height: 20%; }
+      body .meet_our_team .team_carousel .controls #t_c_nextbtn,
+      body .meet_our_team .team_carousel .controls #t_c_prevbtn {
+        position: relative;
+        height: 100%;
+        width: 3%;
+        right: 0; }
+      body .meet_our_team .team_carousel .controls #t_c_nextbtn {
+        float: right;
+        clear: both; }
+    body .meet_our_team .team_carousel .slick-slide {
+      margin: 10px; }
+    body .meet_our_team .team_carousel .slick-slide img {
+      width: 100%;
+      height: 80%; }
+    body .meet_our_team .team_carousel .slick-prev,
+    body .meet_our_team .team_carousel .slick-next {
+      bottom: -1%;
+      z-index: 10;
+      color: black; }
+    body .meet_our_team .team_carousel .slick-next {
+      right: 0; }
+    body .meet_our_team .team_carousel .slick-prev {
+      left: 0; }
+    body .meet_our_team .team_carousel .slick-prev:hover,
+    body .meet_our_team .team_carousel .slick-next:hover {
+      opacity: 0.5; }
+    body .meet_our_team .team_carousel .slick-prev:before,
+    body .meet_our_team .team_carousel .slick-next:before {
+      color: red; }
   body .footer .foot ul {
     justify-content: flex-start; }
-    @media only screen and (min-width: 1300px) {
-      body .footer .foot ul {
-        justify-content: flex-end; } }
+
+@media screen and (min-width: 390px) {
+  body .header {
+    grid-template-rows: 10% 90%; }
+    body .header .head {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px; }
+      body .header .head ul {
+        flex-basis: 50%;
+        top: -0.5px;
+        font-size: 20px; }
+    body .header .main_slider .carousel-caption h5 {
+      font-size: 30px; }
+    body .header .main_slider .carousel-caption p {
+      font: 60px "Open Sans"; }
+    body .header .main_slider .carousel-caption button {
+      padding: 20px 40px; }
+  body .subscriptions div {
+    height: 25vh;
+    max-width: 30%;
+    margin: 0.5em;
+    font-size: 16px; }
+  body .about_us {
+    flex-direction: row;
+    flex-wrap: wrap; }
+  body .our_classes .head {
+    font-size: 1.9rem; }
+  body .our_classes .foot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  body .meet_our_team .team_carousel {
+    display: block; }
+  body .footer .foot ul {
+    justify-content: flex-end; } }
