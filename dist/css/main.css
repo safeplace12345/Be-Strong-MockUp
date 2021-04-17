@@ -1,3 +1,121 @@
+.header {
+  height: 70vh;
+  display: grid;
+  grid-template-rows: 25% 85%; }
+  .header .head {
+    display: flex;
+    flex-direction: column; }
+    .header .head img.logo {
+      top: 47px;
+      left: 37px;
+      width: 151px;
+      height: 33px; }
+    .header .head ul {
+      display: flex;
+      letter-spacing: -0.09px;
+      color: #000000;
+      text-transform: capitalize;
+      opacity: 1;
+      top: 15px; }
+  .header .main_slider .carousel {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%; }
+    .header .main_slider .carousel .carousel-inner,
+    .header .main_slider .carousel .carousel-item {
+      height: 100%; }
+    .header .main_slider .carousel .carousel-caption {
+      height: 100%;
+      top: 0;
+      margin: auto auto; }
+      .header .main_slider .carousel .carousel-caption h5 {
+        opacity: 75%;
+        letter-spacing: 0.1em;
+        font-weight: lighter; }
+      .header .main_slider .carousel .carousel-caption p {
+        letter-spacing: 0.08em;
+        font-weight: lighter; }
+  .header .main_slider img {
+    width: 100%;
+    height: 100%; }
+
+.subscriptions div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; }
+
+.subscriptions .classic {
+  background: url("../Assets/Assets Mobile/Group 156.png"); }
+
+.subscriptions .standard {
+  background: url("../Assets/Assets Mobile/Group 155.png"); }
+  .subscriptions .standard button {
+    background-color: #945b9f; }
+
+.subscriptions .premium {
+  background: url("../Assets/Assets Mobile/Group 154.png"); }
+
+.about_us {
+  flex-direction: column;
+  align-items: center; }
+  .about_us p {
+    font-size: 20px; }
+  .about_us .tile {
+    height: 35vh; }
+    .about_us .tile img {
+      z-index: -2;
+      width: 100%;
+      height: 100%; }
+    .about_us .tile .blurred {
+      position: relative;
+      top: -20%;
+      padding: 1em;
+      background-color: #13191a;
+      opacity: 0.68; }
+
+.meet_our_team h2 {
+  font-size: 45px; }
+
+.meet_our_team .team_carousel {
+  display: none; }
+  .meet_our_team .team_carousel .controls {
+    position: relative;
+    bottom: -15em;
+    height: 20%; }
+    .meet_our_team .team_carousel .controls #t_c_nextbtn,
+    .meet_our_team .team_carousel .controls #t_c_prevbtn {
+      position: relative;
+      height: 100%;
+      width: 3%;
+      right: 0; }
+    .meet_our_team .team_carousel .controls #t_c_nextbtn {
+      float: right;
+      clear: both; }
+  .meet_our_team .team_carousel .slick-slide {
+    margin: 10px; }
+  .meet_our_team .team_carousel .slick-slide img {
+    width: 100%;
+    height: 80%; }
+  .meet_our_team .team_carousel .slick-prev,
+  .meet_our_team .team_carousel .slick-next {
+    bottom: -1%;
+    z-index: 10;
+    color: black; }
+  .meet_our_team .team_carousel .slick-next {
+    right: 0; }
+  .meet_our_team .team_carousel .slick-prev {
+    left: 0; }
+  .meet_our_team .team_carousel .slick-prev:hover,
+  .meet_our_team .team_carousel .slick-next:hover {
+    opacity: 0.5; }
+  .meet_our_team .team_carousel .slick-prev:before,
+  .meet_our_team .team_carousel .slick-next:before {
+    color: red; }
+
+.footer .foot ul {
+  justify-content: flex-start; }
+
 body {
   margin: 0;
   padding: 0;
@@ -6,115 +124,6 @@ body {
   font-family: "Roboto Mono", monospace; }
   body p {
     font: 20px; }
-  body .header {
-    height: 70vh;
-    display: grid;
-    grid-template-rows: 25% 85%; }
-    body .header .head {
-      display: flex;
-      flex-direction: column; }
-      body .header .head img.logo {
-        top: 47px;
-        left: 37px;
-        width: 151px;
-        height: 33px; }
-      body .header .head ul {
-        display: flex;
-        letter-spacing: -0.09px;
-        color: #000000;
-        text-transform: capitalize;
-        opacity: 1;
-        top: 15px; }
-    body .header .main_slider .carousel {
-      margin: 0 auto;
-      width: 100%;
-      height: 100%; }
-      body .header .main_slider .carousel .carousel-inner,
-      body .header .main_slider .carousel .carousel-item {
-        height: 100%; }
-      body .header .main_slider .carousel .carousel-caption {
-        height: 100%;
-        top: 0;
-        margin: auto auto; }
-        body .header .main_slider .carousel .carousel-caption h5 {
-          opacity: 75%;
-          letter-spacing: 0.1em;
-          font-weight: lighter; }
-        body .header .main_slider .carousel .carousel-caption p {
-          letter-spacing: 0.08em;
-          font-weight: lighter; }
-    body .header .main_slider img {
-      width: 100%;
-      height: 100%; }
-  body .subscriptions div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center; }
-  body .subscriptions .classic {
-    background: url("../Assets/Assets Mobile/Group 156.png"); }
-  body .subscriptions .standard {
-    background: url("../Assets/Assets Mobile/Group 155.png"); }
-    body .subscriptions .standard button {
-      background-color: #945b9f; }
-  body .subscriptions .premium {
-    background: url("../Assets/Assets Mobile/Group 154.png"); }
-  body .about_us {
-    flex-direction: column;
-    align-items: center; }
-    body .about_us p {
-      font-size: 20px; }
-    body .about_us .tile {
-      height: 35vh; }
-      body .about_us .tile img {
-        z-index: -2;
-        width: 100%;
-        height: 100%; }
-      body .about_us .tile .blurred {
-        position: relative;
-        top: -20%;
-        padding: 1em;
-        background-color: #13191a;
-        opacity: 0.68; }
-  body .meet_our_team h2 {
-    font-size: 45px; }
-  body .meet_our_team .team_carousel {
-    display: none; }
-    body .meet_our_team .team_carousel .controls {
-      position: relative;
-      bottom: -15em;
-      height: 20%; }
-      body .meet_our_team .team_carousel .controls #t_c_nextbtn,
-      body .meet_our_team .team_carousel .controls #t_c_prevbtn {
-        position: relative;
-        height: 100%;
-        width: 3%;
-        right: 0; }
-      body .meet_our_team .team_carousel .controls #t_c_nextbtn {
-        float: right;
-        clear: both; }
-    body .meet_our_team .team_carousel .slick-slide {
-      margin: 10px; }
-    body .meet_our_team .team_carousel .slick-slide img {
-      width: 100%;
-      height: 80%; }
-    body .meet_our_team .team_carousel .slick-prev,
-    body .meet_our_team .team_carousel .slick-next {
-      bottom: -1%;
-      z-index: 10;
-      color: black; }
-    body .meet_our_team .team_carousel .slick-next {
-      right: 0; }
-    body .meet_our_team .team_carousel .slick-prev {
-      left: 0; }
-    body .meet_our_team .team_carousel .slick-prev:hover,
-    body .meet_our_team .team_carousel .slick-next:hover {
-      opacity: 0.5; }
-    body .meet_our_team .team_carousel .slick-prev:before,
-    body .meet_our_team .team_carousel .slick-next:before {
-      color: red; }
-  body .footer .foot ul {
-    justify-content: flex-start; }
 
 @media screen and (min-width: 390px) {
   body .header {

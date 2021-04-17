@@ -1,0 +1,51 @@
+ .meet_our_team {
+    h2 {
+      font-size: 45px;
+    }
+    .team_carousel {
+      display: none;
+      .controls {
+        position: relative;
+        bottom: -15em;
+        height: 20%;
+        #t_c_nextbtn,
+        #t_c_prevbtn {
+          position: relative;
+          height: 100%;
+          width: 3%;
+          right: 0;
+        }
+        #t_c_nextbtn {
+          float: right;
+          clear: both;
+        }
+      }
+      .slick-slide {
+        margin: 10px;
+      }
+      .slick-slide img {
+        @include fullHW(100%, 80%);
+      }
+      .slick-prev,
+      .slick-next {
+        bottom: -1%;
+        z-index: 10;
+        color: black;
+      }
+      .slick-next {
+        right: 0;
+      }
+      .slick-prev {
+        left: 0;
+      }
+
+      .slick-prev:hover,
+      .slick-next:hover {
+        opacity: 0.5;
+      }
+      .slick-prev:before,
+      .slick-next:before {
+        color: red;
+      }
+    }
+  }

@@ -1,0 +1,21 @@
+  .subscriptions {
+  
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .classic {
+      background: url("../Assets/Assets\ Mobile/Group 156.png");
+    }
+    .standard {
+      background: url("../Assets/Assets Mobile/Group 155.png");
+      button {
+        background-color: $standardColor;
+      }
+    }
+    .premium {
+      background: url("../Assets/Assets\ Mobile/Group 154.png");
+    }
+  }
